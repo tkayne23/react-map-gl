@@ -6,6 +6,10 @@
   version "0.0.1"
   resolved "https://unpm.uberinternal.com/@mapbox%2fgl-matrix/-/gl-matrix-0.0.1.tgz#e5126aab4d64c36b81c7a97d0ae0dddde5773d2b"
 
+"@mapbox/unitbezier@^0.0.0":
+  version "0.0.0"
+  resolved "https://unpm.uberinternal.com/@mapbox%2funitbezier/-/unitbezier-0.0.0.tgz#15651bd553a67b8581fb398810c98ad86a34524e"
+
 "JSV@>= 4.0.x":
   version "4.0.2"
   resolved "https://unpm.uberinternal.com/JSV/-/JSV-4.0.2.tgz#d077f6825571f82132f9dffaed587b4029feff57"
@@ -162,6 +166,10 @@ array-equal@^1.0.0:
   version "1.0.0"
   resolved "https://unpm.uberinternal.com/array-equal/-/array-equal-1.0.0.tgz#8c2a5ef2472fd9ea742b04c77a75093ba2757c93"
 
+array-filter@~0.0.0:
+  version "0.0.1"
+  resolved "https://unpm.uberinternal.com/array-filter/-/array-filter-0.0.1.tgz#7da8cf2e26628ed732803581fd21f67cacd2eeec"
+
 array-flatten@1.1.1:
   version "1.1.1"
   resolved "https://unpm.uberinternal.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
@@ -172,6 +180,14 @@ array-index@^1.0.0:
   dependencies:
     debug "^2.2.0"
     es6-symbol "^3.0.2"
+
+array-map@~0.0.0:
+  version "0.0.0"
+  resolved "https://unpm.uberinternal.com/array-map/-/array-map-0.0.0.tgz#88a2bab73d1cf7bcd5c1b118a003f66f665fa662"
+
+array-reduce@~0.0.0:
+  version "0.0.0"
+  resolved "https://unpm.uberinternal.com/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
 
 array-union@^1.0.1:
   version "1.0.2"
@@ -826,7 +842,7 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://unpm.uberinternal.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
-debug@^2.1.1, debug@^2.2.0:
+debug@^2.1.1, debug@^2.1.3, debug@^2.2.0:
   version "2.6.0"
   resolved "https://unpm.uberinternal.com/debug/-/debug-2.6.0.tgz#bc596bcabe7617f11d9fa15361eded5608b8499b"
   dependencies:
@@ -949,6 +965,12 @@ ecc-jsbn@~0.1.1:
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://unpm.uberinternal.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
+
+electron-spawn@^3.0.0:
+  version "3.3.0"
+  resolved "https://unpm.uberinternal.com/electron-spawn/-/electron-spawn-3.3.0.tgz#0fceda0b403f7e2611297019a3861174ebb87332"
+  dependencies:
+    npm-execspawn "^1.2.0"
 
 elliptic@^6.0.0:
   version "6.3.2"
@@ -1277,7 +1299,7 @@ evp_bytestokey@^1.0.0:
   dependencies:
     create-hash "^1.1.1"
 
-execspawn@^1.0.1:
+execspawn@^1.0.0, execspawn@^1.0.1:
   version "1.0.1"
   resolved "https://unpm.uberinternal.com/execspawn/-/execspawn-1.0.1.tgz#8286f9dde7cecde7905fbdc04e24f368f23f8da6"
   dependencies:
@@ -1377,7 +1399,7 @@ faye-websocket@~0.11.0:
   dependencies:
     websocket-driver ">=0.5.1"
 
-fbjs@^0.8.1, fbjs@^0.8.4:
+fbjs@^0.8.0, fbjs@^0.8.1, fbjs@^0.8.4:
   version "0.8.9"
   resolved "https://unpm.uberinternal.com/fbjs/-/fbjs-0.8.9.tgz#180247fbd347dcc9004517b904f865400a0c8f14"
   dependencies:
@@ -1650,7 +1672,7 @@ glob-parent@^2.0.0:
   dependencies:
     is-glob "^2.0.0"
 
-"glob@3 || 4 || 5 || 6 || 7", glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@~7.1.1:
+"glob@3 || 4 || 5 || 6 || 7", glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@^7.1.1, glob@~7.1.1:
   version "7.1.1"
   resolved "https://unpm.uberinternal.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
   dependencies:
@@ -2350,13 +2372,13 @@ magic-string@~0.19.0:
   dependencies:
     vlq "^0.2.1"
 
-"mapbox-gl-function@github:mapbox/mapbox-gl-function#4f829622413f336080d3c710244c251421c0ec30":
+mapbox-gl-function@mapbox/mapbox-gl-function#41c6724e2bbd7bd1eb5991451bbf118b7d02b525:
   version "1.3.0"
-  resolved "https://codeload.github.com/mapbox/mapbox-gl-function/tar.gz/4f829622413f336080d3c710244c251421c0ec30"
+  resolved "https://codeload.github.com/mapbox/mapbox-gl-function/tar.gz/41c6724e2bbd7bd1eb5991451bbf118b7d02b525"
 
-"mapbox-gl-style-spec@github:mapbox/mapbox-gl-style-spec#e85407a377510acb647161de6be6357ab4f606dd":
-  version "8.9.0"
-  resolved "https://codeload.github.com/mapbox/mapbox-gl-style-spec/tar.gz/e85407a377510acb647161de6be6357ab4f606dd"
+mapbox-gl-style-spec@mapbox/mapbox-gl-style-spec#d11f6d2775bf5b22534b3b2fb3410755b2473cdf:
+  version "8.11.0"
+  resolved "https://codeload.github.com/mapbox/mapbox-gl-style-spec/tar.gz/d11f6d2775bf5b22534b3b2fb3410755b2473cdf"
   dependencies:
     csscolorparser "~1.0.2"
     fast-stable-stringify "^0.1.1"
@@ -2370,11 +2392,12 @@ mapbox-gl-supported@^1.2.0:
   version "1.2.0"
   resolved "https://unpm.uberinternal.com/mapbox-gl-supported/-/mapbox-gl-supported-1.2.0.tgz#cbd34df894206cadda9a33c8d9a4609f26bb1989"
 
-mapbox-gl@0.31.0:
-  version "0.31.0"
-  resolved "https://unpm.uberinternal.com/mapbox-gl/-/mapbox-gl-0.31.0.tgz#897e1b1a06e2efa38887aa01a7fc2625574c7917"
+mapbox-gl@0.32.1:
+  version "0.32.1"
+  resolved "https://unpm.uberinternal.com/mapbox-gl/-/mapbox-gl-0.32.1.tgz#fb12d33dc97a96ef5d2ad4f0b7827ccc247a8ad2"
   dependencies:
     "@mapbox/gl-matrix" "^0.0.1"
+    "@mapbox/unitbezier" "^0.0.0"
     brfs "^1.4.0"
     bubleify "^0.5.1"
     csscolorparser "^1.0.2"
@@ -2383,8 +2406,8 @@ mapbox-gl@0.31.0:
     geojson-rewind "^0.1.0"
     geojson-vt "^2.4.0"
     grid-index "^1.0.0"
-    mapbox-gl-function mapbox/mapbox-gl-function#4f829622413f336080d3c710244c251421c0ec30
-    mapbox-gl-style-spec mapbox/mapbox-gl-style-spec#e85407a377510acb647161de6be6357ab4f606dd
+    mapbox-gl-function mapbox/mapbox-gl-function#41c6724e2bbd7bd1eb5991451bbf118b7d02b525
+    mapbox-gl-style-spec mapbox/mapbox-gl-style-spec#d11f6d2775bf5b22534b3b2fb3410755b2473cdf
     mapbox-gl-supported "^1.2.0"
     package-json-versionify "^1.0.2"
     pbf "^1.3.2"
@@ -2397,7 +2420,6 @@ mapbox-gl@0.31.0:
     tinyqueue "^1.1.0"
     unassertify "^2.0.0"
     unflowify "^1.0.0"
-    unitbezier "^0.0.0"
     vector-tile "^1.3.0"
     vt-pbf "^2.0.2"
     webworkify "^1.4.0"
@@ -2654,6 +2676,15 @@ normalize-package-data@^2.3.2:
 normalize-path@^2.0.1:
   version "2.0.1"
   resolved "https://unpm.uberinternal.com/normalize-path/-/normalize-path-2.0.1.tgz#47886ac1662760d4261b7d979d241709d3ce3f7a"
+
+npm-execspawn@^1.2.0:
+  version "1.3.0"
+  resolved "https://unpm.uberinternal.com/npm-execspawn/-/npm-execspawn-1.3.0.tgz#5b4860a8cf783465386a388a21a145d3f7125638"
+  dependencies:
+    debug "^2.1.3"
+    execspawn "^1.0.0"
+    shell-quote "^1.5.0"
+    xtend "^3.0.0"
 
 "npmlog@0 || 1 || 2":
   version "2.0.4"
@@ -3033,6 +3064,12 @@ punycode@1.3.2:
 punycode@^1.2.4, punycode@^1.4.1:
   version "1.4.1"
   resolved "https://unpm.uberinternal.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
+
+pure-render-decorator@^1.1.0:
+  version "1.2.1"
+  resolved "https://unpm.uberinternal.com/pure-render-decorator/-/pure-render-decorator-1.2.1.tgz#568870eeca17a1cee536b4fe94a3477fcd31eeb9"
+  dependencies:
+    fbjs "^0.8.0"
 
 q@^1.1.2:
   version "1.4.1"
@@ -3457,6 +3494,15 @@ shelf-pack@^1.0.0:
   version "1.1.0"
   resolved "https://unpm.uberinternal.com/shelf-pack/-/shelf-pack-1.1.0.tgz#b4679afdd00ad68dfd9bbd2b5a3e819293a74d82"
 
+shell-quote@^1.5.0:
+  version "1.6.1"
+  resolved "https://unpm.uberinternal.com/shell-quote/-/shell-quote-1.6.1.tgz#f4781949cce402697127430ea3b3c5476f481767"
+  dependencies:
+    array-filter "~0.0.0"
+    array-map "~0.0.0"
+    array-reduce "~0.0.0"
+    jsonify "~0.0.0"
+
 shelljs@^0.7.5:
   version "0.7.6"
   resolved "https://unpm.uberinternal.com/shelljs/-/shelljs-0.7.6.tgz#379cccfb56b91c8601e4793356eb5382924de9ad"
@@ -3741,6 +3787,10 @@ supports-color@^3.1.0, supports-color@^3.1.1:
   dependencies:
     has-flag "^1.0.0"
 
+svg-transform@0.0.3:
+  version "0.0.3"
+  resolved "https://unpm.uberinternal.com/svg-transform/-/svg-transform-0.0.3.tgz#dbe5756748483a8ba0d262674357aeb29a64b081"
+
 "symbol-tree@>= 3.1.0 < 4.0.0":
   version "3.2.1"
   resolved "https://unpm.uberinternal.com/symbol-tree/-/symbol-tree-3.2.1.tgz#8549dd1d01fa9f893c18cc9ab0b106b4d9b168cb"
@@ -3825,6 +3875,22 @@ tar@^2.0.0, tar@~2.2.1:
     block-stream "*"
     fstream "^1.0.2"
     inherits "2"
+
+tempfile@^1.1.1:
+  version "1.1.1"
+  resolved "https://unpm.uberinternal.com/tempfile/-/tempfile-1.1.1.tgz#5bcc4eaecc4ab2c707d8bc11d99ccc9a2cb287f2"
+  dependencies:
+    os-tmpdir "^1.0.0"
+    uuid "^2.0.1"
+
+testron@^1.2.0:
+  version "1.2.0"
+  resolved "https://unpm.uberinternal.com/testron/-/testron-1.2.0.tgz#ca762378878fa7c2a45b905a6e81c3d9d7b0e02a"
+  dependencies:
+    electron-spawn "^3.0.0"
+    minimist "^1.1.2"
+    tempfile "^1.1.1"
+    through2 "^2.0.0"
 
 text-table@~0.2.0:
   version "0.2.0"
@@ -3971,10 +4037,6 @@ unflowify@^1.0.0:
     flow-remove-types "^1.1.2"
     through "^2.3.8"
 
-unitbezier@^0.0.0:
-  version "0.0.0"
-  resolved "https://unpm.uberinternal.com/unitbezier/-/unitbezier-0.0.0.tgz#33bf7f5d7284c5350bfc5c7f770fba7549c54a5e"
-
 unpipe@~1.0.0:
   version "1.0.0"
   resolved "https://unpm.uberinternal.com/unpipe/-/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
@@ -4032,7 +4094,7 @@ utils-merge@1.0.0:
   version "1.0.0"
   resolved "https://unpm.uberinternal.com/utils-merge/-/utils-merge-1.0.0.tgz#0294fb922bb9375153541c4f7096231f287c8af8"
 
-uuid@^2.0.2:
+uuid@^2.0.1, uuid@^2.0.2:
   version "2.0.3"
   resolved "https://unpm.uberinternal.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
 
@@ -4260,6 +4322,10 @@ write@^0.2.1:
 "xtend@>=4.0.0 <4.1.0-0", xtend@^4.0.0, xtend@^4.0.1, xtend@~4.0.0, xtend@~4.0.1:
   version "4.0.1"
   resolved "https://unpm.uberinternal.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
+
+xtend@^3.0.0:
+  version "3.0.0"
+  resolved "https://unpm.uberinternal.com/xtend/-/xtend-3.0.0.tgz#5cce7407baf642cba7becda568111c493f59665a"
 
 xtend@~2.1.1:
   version "2.1.2"

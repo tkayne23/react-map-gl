@@ -23,14 +23,7 @@ import React, {Component} from 'react';
 import window from 'global/window';
 import document from 'global/document';
 
-import TiltExample from './views/tilt-example';
-import NotInteractiveExample from './views/not-interactive-example';
-import CustomOverlayExample from './views/custom-overlay-example';
-import GeodataCreator from './views/geodata-creator-example';
-import ScatterplotOverlayExample from './views/scatterplot-overlay-example';
-import RouteOverlayExample from './views/route-overlay-example';
-import StyleDiffingExample from './views/style-diffing-example';
-import ClickExample from './views/click-example';
+import View from './view';
 
 export default class App extends Component {
   constructor(props) {
@@ -43,14 +36,7 @@ export default class App extends Component {
     const common = {width: 400, height: 400, style: {float: 'left'}};
     return (
       <div>
-        <TiltExample {...common} width={ this.state.width - 30 }/>
-        <RouteOverlayExample {...common}/>
-        <ScatterplotOverlayExample {...common}/>
-        <CustomOverlayExample {...common}/>
-        <GeodataCreator {...common}/>
-        <NotInteractiveExample {...common}/>
-        <StyleDiffingExample {...common}/>
-        <ClickExample {...common }/>
+        <View {...common} width={ this.state.width - 30 }/>
       </div>
     );
   }
