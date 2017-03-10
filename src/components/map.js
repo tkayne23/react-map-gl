@@ -186,8 +186,13 @@ const propTypes = {
     * The load callback is called when all dependencies have been loaded and
     * the map is ready.
     */
-  onLoad: PropTypes.func
+  onLoad: PropTypes.func,
 
+  /**
+    * True means key must be pressed to rotate instead of pan
+    * false to means key must be pressed to pan
+    */
+  pressKeyToRotate: PropTypes.bool
 };
 
 const defaultProps = {
@@ -201,7 +206,8 @@ const defaultProps = {
   pitch: 0,
   altitude: 1.5,
   clickRadius: 15,
-  maxZoom: 20
+  maxZoom: 20,
+  pressKeyToRotate: true
 };
 
 // Try to get access token from URL, env, local storage or config
@@ -697,6 +703,7 @@ export default class MapGL extends Component {
     if (this.state.isSupported && this.props.onChangeViewport) {
       content = (
         <MapInteractions
+          pressKeyToRotate={ this.props.pressKeyToRotate }
           onMouseDown ={ this._onMouseDown }
           onMouseDrag ={ this._onMouseDrag }
           onMouseRotate ={ this._onMouseRotate }

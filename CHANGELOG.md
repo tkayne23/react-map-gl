@@ -4,6 +4,9 @@
   `module` field that points to files with preserved ES6 import/exports.
 * NEW: Significant reduction in number of npm dependencies.
 
+* NEW: Setting the new `pressKeyToRotate` prop to `false` will make rotation
+  rather than pan the default operation, requiring a function key to be pressed
+  for pan.
 * BREAKING: The `ChoroplethOverlay` React component is no longer part of the
   exported library. It has been moved to examples folder, applications that
   still need it can copy it from there instead of importing it directly.

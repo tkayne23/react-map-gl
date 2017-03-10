@@ -43,7 +43,8 @@ export default class App extends Component {
     const common = {width: 400, height: 400, style: {float: 'left'}};
     return (
       <div>
-        <TiltExample {...common} width={ this.state.width - 30 }/>
+        <TiltExample {...common} width={this.state.width - 30}/>
+        <TiltExample {...common} width={this.state.width - 30} pressKeyToRotate={false}/>
         <RouteOverlayExample {...common}/>
         <ScatterplotOverlayExample {...common}/>
         <CustomOverlayExample {...common}/>

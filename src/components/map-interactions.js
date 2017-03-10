@@ -78,6 +78,8 @@ function centroid(positions) {
 const propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
+  pressKeyToRotate: PropTypes.bool, // True means key must be pressed to rotate instead of pan
+                                    // false to means key must be pressed to pan
   onMouseDown: PropTypes.func,
   onMouseDrag: PropTypes.func,
   onMouseRotate: PropTypes.func,
@@ -94,6 +96,7 @@ const propTypes = {
 };
 
 const defaultProps = {
+  pressKeyToRotate: true,
   onMouseDown: noop,
   onMouseDrag: noop,
   onMouseRotate: noop,
@@ -171,7 +174,10 @@ export default class Interactions extends Component {
   _onMouseDrag(event) {
     const pos = this._getMousePos(event);
     this.setState({pos, didDrag: true});
-    if (this.state.isFunctionKeyPressed) {
+
+    const {isFunctionKeyPressed} = this.state;
+    const rotate = this.props.pressKeyToRotate ? isFunctionKeyPressed : !isFunctionKeyPressed;
+    if (rotate) {
       const {startPos} = this.state;
       this.props.onMouseRotate({pos, startPos});
     } else {
@@ -182,7 +188,10 @@ export default class Interactions extends Component {
   _onTouchDrag(event) {
     const pos = this._getTouchPos(event);
     this.setState({pos, didDrag: true});
-    if (this.state.isFunctionKeyPressed) {
+
+    const {isFunctionKeyPressed} = this.state;
+    const rotate = this.props.pressKeyToRotate ? isFunctionKeyPressed : !isFunctionKeyPressed;
+    if (rotate) {
       const {startPos} = this.state;
       this.props.onTouchRotate({pos, startPos});
     } else {

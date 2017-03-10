@@ -103,14 +103,11 @@ export default class TiltExample extends Component {
   }
 
   render() {
-    const viewport = {
-      // mapStyle: this.state.mapStyle,
-      ...this.state.viewport,
-      ...this.props
-    };
+    // mapStyle: this.state.mapStyle,
     return (
       <MapGL
-        { ...viewport }
+        { ...this.state.viewport }
+        { ...this.props }
         onChangeViewport={ this._onChangeViewport }
         onClickFeatures={ this._onClickFeatures }
         perspectiveEnabled={ true }
